@@ -71,9 +71,5 @@ function superbowlWin(array) {
   const winner = array.find((anything) => {
     return anything.result === "W";
   });
-  if (winner) {
-    return winner.year;
-  } else {
-    return undefined;
-  }
+  return winner ? winner.year : undefined;
 }
