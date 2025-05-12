@@ -60,9 +60,16 @@ const record = [
   {year: "1960", result: "N/A"},
 ];
 
-function superbowlWin(record) {
-  const winners = record.find((r) => r.result === "W");
-  return record.year;
-}
+// function superbowlWin(record) {
+//   const winners = record.find((r) => r.result === "W");
+//   return record.year;
+// }
 
-superbowlWin(winners);
+// superbowlWin(winners.year);
+
+function superbowlWin(array) {
+  const winners = array.find((anything) => {
+    return anything.result === "W";
+  });
+  return winners.year;
+}
